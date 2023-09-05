@@ -12,17 +12,15 @@ export const metadata = {
 export default function App({ children }) {
   return (
     <>
-      <html lang="en">
-        <Head>
-          <meta name="viewport" content="width-device-widt, initial-scale-1" />
-          <link rel="icon" href="/vercel.svg" />
-        </Head>
-        <body
-          className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}
-        >
-          {children}
-        </body>
-      </html>
+      <Head>
+        <meta name="viewport" content="width-device-widt, initial-scale-1" />
+        <link rel="icon" href="/vercel.svg" />
+      </Head>
+      <body
+        className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}
+      >
+        {children}
+      </body>
     </>
   )
 }
