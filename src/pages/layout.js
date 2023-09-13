@@ -16,11 +16,11 @@ export default function App({ children }) {
         <meta name="viewport" content="width-device-widt, initial-scale-1" />
         <link rel="icon" href="/vercel.svg" />
       </Head>
-      <body
+      <main
         className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}
       >
         {children}
-      </body>
+      </main>
     </>
   )
 }
