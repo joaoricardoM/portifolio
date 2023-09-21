@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0">
           {/* <Particle /> */}
           <div className="flex item-center justify-between w-full">
@@ -54,7 +54,13 @@ export default function Home() {
                   border-2 
                   border-solid 
                   border-transparent 
-                  hover:border-dark"
+                  hover:border-dark
+                  dark:bg-light
+                  dark:text-dark
+                  hover:dark:bg-dark
+                  hover:dark:text-light
+                  hover:dark:border-light
+                  "
                   download={true}
                 >
                   Resume <LinkArrow className="w-6 ml-1" />
@@ -62,7 +68,7 @@ export default function Home() {
                 <Link
                   href="mailto:joaomiranda997@hotmail.com"
                   target={'_blank'}
-                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light"
                 >
                   Contact{' '}
                 </Link>

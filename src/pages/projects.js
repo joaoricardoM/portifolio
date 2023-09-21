@@ -9,7 +9,7 @@ import project1 from '../../public/images/projects/screenshot1.jpg'
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full relative flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12">
+    <article className="w-full relative flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounderd-br-3xl" />
       <Link
         href={link}
@@ -48,7 +48,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounderd-br-3xl" />
       <Link
         href={link}
@@ -64,7 +64,7 @@ const Project = ({ title, type, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold ">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link
@@ -94,7 +94,7 @@ const projects = () => {
         <Layout className="pt-16">
           <Animated text="Imagination Trumps Knowledge!" className="mb-16" />
 
-          <div className="grid grid-cols-12 gap-24">
+          <div className="grid grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12">
               <FeaturedProject
                 title="Netflix Clone"
