@@ -14,7 +14,7 @@ const articles = () => {
         <Animated text="Coming Soon!" className="mb-16" />
 
         <main className="w-full overflow-hidden mb-16 flex flex-col items-center justify-center">
-          <p className="text-dark text-lg mb-16">
+          <p className="text-dark text-lg mb-16 dark:text-light">
             We&apos;re working hard to bring you something amazing. Stay tuned!
           </p>
           <div className="shadow w-full bg-white mt-2 max-w-2xl mx-auto rounded-full mb-40">
