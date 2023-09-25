@@ -18,24 +18,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout className="pt-0">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
+        <Layout className="pt-0 md:pt-16 sm:pt-8">
           {/* <Particle /> */}
-          <div className="flex item-center justify-between w-full">
-            <div className="w-1/2">
-              <Image src={profilePic} alt="João" className="w-full h-auto" />
+          <div className="flex item-center justify-between w-full lg:flex-col">
+            <div className="w-1/2 md:w-full">
+              <Image
+                src={profilePic}
+                alt="João"
+                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              />
             </div>
-            <div className="w-1/2 flex flex-col items-center self-center">
+            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <Animated
-                text="Turning Ideas Into Reality With Code And Design."
-                className="!text-6xl !text-left"
+                text="Turning Vision Into Reality With Code And Design."
+                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:text-3xl"
               />
               <p className="my-4 text-base font-medium">
                 I&apos;m a software developer based in Campinas BR, specializing
                 in building exceptional websites and mobile applications, and
                 everything in between.
               </p>
-              <div className="flex items-center self-start mt-2">
+              <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
                   href="/joaoricardo.pdf"
                   target={'_blank'}
@@ -79,7 +85,7 @@ export default function Home() {
 
         <HireMe />
 
-        <div className="absolute right-8 bottom-24 inline-block w-28">
+        <div className="absolute right-8 bottom-24 inline-block w-28 md:hidden">
           <Image src={lightBulb} alt="JoaoCode" className="w-full h-auto" />
         </div>
       </main>
