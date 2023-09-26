@@ -1,5 +1,6 @@
 import Animated from '@/components/Animated'
 import Layout from '@/components/Layout'
+import TransitionEffect from '@/components/TransitionEffect'
 import Head from 'next/head'
 import React from 'react'
 
@@ -10,10 +11,16 @@ const articles = () => {
         <title>João | Articles Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <Layout>
-        <Animated text="Coming Soon!" className="mb-16" />
 
-        <main className="w-full overflow-hidden mb-16 flex flex-col items-center justify-center">
+      <TransitionEffect />
+
+      <Layout>
+        <Animated
+          text="Coming Soon!"
+          className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+        />
+
+        <main className="w-full overflow-hidden mb-16 flex flex-col items-center justify-center ">
           <p className="text-dark text-lg mb-16 dark:text-light">
             We&apos;re working hard to bring you something amazing. Stay tuned!
           </p>
