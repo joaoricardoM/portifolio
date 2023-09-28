@@ -10,6 +10,7 @@ const articles = () => {
       <Head>
         <title>João | Articles Page</title>
         <meta name="description" content="any description" />
+        <link rel="icon" href="/logo.svg" sizes="any" />
       </Head>
 
       <TransitionEffect />

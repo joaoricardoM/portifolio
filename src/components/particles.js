@@ -1,118 +1,96 @@
+import { Particles } from 'react-tsparticles'
+import { loadFull } from 'tsparticles'
 import React, { useCallback } from 'react'
-import Particles from 'react-tsparticles'
-import { loadSlim } from 'tsparticles-slim'
+const ParticlesContainer = () => {
+  //init
 
-function Particle() {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine)
-    await loadSlim(engine)
+    await loadFull(engine)
   }, [])
 
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container)
-  }, [])
+  const particlesLoaded = useCallback(async () => {}, [])
 
   return (
     <Particles
+      className="absolute h-full"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        fullScreen: {
-          enable: true,
-          zIndex: -1
-        },
-        particles: {
-          number: {
-            value: 10,
-            density: {
-              enable: false
-            }
-          },
+        fullScreen: { enable: false },
+        background: {
           color: {
-            value: '#000'
-          },
-          shape: {
-            type: 'star',
-            options: {
-              star: {
-                sides: 5
-              }
-            }
-          },
-          opacity: {
-            value: 0.8
-          },
-          size: {
-            value: 4
-          },
-          rotate: {
-            value: {
-              min: 0,
-              max: 360
-            },
-            direction: 'clockwise',
-            animation: {
-              enable: true,
-              speed: 5,
-              sync: false
-            }
-          },
-          links: {
-            enable: true,
-            distance: 600,
-            color: '#ffffff',
-            opacity: 0.4,
-            width: 2
-          },
-          move: {
-            enable: true,
-            speed: 2
+            value: ''
           }
         },
+        fpsLimit: 120,
         interactivity: {
           events: {
+            onClick: {
+              enable: false,
+              mode: 'push'
+            },
             onHover: {
               enable: true,
-              mode: 'grab'
+              mode: 'repulse'
             },
-            onClick: {
-              enable: true,
-              mode: 'bubble'
-            }
+            resize: true
           },
           modes: {
-            grab: {
-              distance: 400,
-              links: {
-                opacity: 1,
-                color: '#f00'
-              }
-            },
-            bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 8,
-              color: '#ffff00'
+            push: {
+              quantity: 90
             },
             repulse: {
-              distance: 200
-            },
-            push: {
-              quantity: 4
-            },
-            remove: {
-              quantity: 2
+              distance: 200,
+              duration: 0.4
             }
           }
         },
-        background: {
-          color: '#ffffff'
-        }
+        particles: {
+          color: {
+            value: '#e68e2e'
+          },
+          links: {
+            color: '#f5d393',
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1
+          },
+          collisions: {
+            enable: true
+          },
+          move: {
+            direction: 'none',
+            enable: true,
+            outModes: {
+              default: 'bounce'
+            },
+            random: false,
+            speed: 1,
+            straight: false
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 1200
+            },
+            value: 80
+          },
+          opacity: {
+            value: 0.5
+          },
+          shape: {
+            type: 'circle'
+          },
+          size: {
+            value: { min: 1, max: 5 }
+          }
+        },
+        detectRetina: true
       }}
     />
   )
 }
 
-export default Particle
+export default ParticlesContainer

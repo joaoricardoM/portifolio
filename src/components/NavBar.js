@@ -98,7 +98,7 @@ const NavBar = () => {
           </nav>
           <nav className="flex z-0 items-center justify-center flex-wrap">
             <motion.a
-              href="http://twitter.com"
+              href="http://twitter.com/joaoricardo_x"
               target={'_blank'}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -107,7 +107,7 @@ const NavBar = () => {
               <TwitterIcon />
             </motion.a>
             <motion.a
-              href="http://twitter.com"
+              href="https://github.com/joaoricardoM"
               target={'_blank'}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -116,7 +116,7 @@ const NavBar = () => {
               <GithubIcon />
             </motion.a>
             <motion.a
-              href="http://twitter.com"
+              href="https://www.linkedin.com/in/joaormiranda/"
               target={'_blank'}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -124,7 +124,7 @@ const NavBar = () => {
             >
               <LinkedInIcon />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href="http://twitter.com"
               target={'_blank'}
               whileHover={{ y: -2 }}
@@ -141,7 +141,7 @@ const NavBar = () => {
               className="w-6 ml-3"
             >
               <DribbbleIcon />
-            </motion.a>
+            </motion.a> */}
 
             <button
               onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
@@ -197,15 +197,6 @@ const NavBar = () => {
                 target={'_blank'}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className="w-6 mr-3 sm:mx-1"
-              >
-                <TwitterIcon />
-              </motion.a>
-              <motion.a
-                href="http://twitter.com"
-                target={'_blank'}
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.9 }}
                 className="w-6 mx-3 bg-light dark:bg-dark rounded-full sm:mx-1"
               >
                 <GithubIcon />
@@ -224,6 +215,15 @@ const NavBar = () => {
                 target={'_blank'}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
+                className="w-6 mr-3 sm:mx-1"
+              >
+                <TwitterIcon />
+              </motion.a>
+              {/* <motion.a
+                href="http://twitter.com"
+                target={'_blank'}
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
                 className="w-6 mx-3 dark:bg-light rounded-full sm:mx-1"
               >
                 <PinterestIcon />
@@ -236,7 +236,7 @@ const NavBar = () => {
                 className="w-6 ml-3 sm:mx-1"
               >
                 <DribbbleIcon />
-              </motion.a>
+              </motion.a> */}
 
               <button
                 onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}

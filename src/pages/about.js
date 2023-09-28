@@ -4,7 +4,7 @@ import Particle from '@/components/particles'
 import Head from 'next/head'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
-import profilePic from '../../public/images/profile/profileAbout.png'
+import profilePic from '../../public/images/profile/profileAbout.jpeg'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
@@ -42,6 +42,7 @@ const about = () => {
       <Head>
         <title>João | About Page</title>
         <meta name="description" content="any description" />
+        <link rel="icon" href="/logo.svg" sizes="any" />
       </Head>
 
       <TransitionEffect />

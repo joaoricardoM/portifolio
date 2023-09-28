@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import project1 from '../../public/images/projects/screenshot1.jpg'
+import project2 from '../../public/images/projects/home.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -132,6 +133,7 @@ const projects = () => {
       <Head>
         <title>João | Projects Page</title>
         <meta name="description" content="any description" />
+        <link rel="icon" href="/logo.svg" sizes="any" />
       </Head>
 
       <TransitionEffect />
@@ -149,19 +151,19 @@ const projects = () => {
                 title="Netflix Clone"
                 summary="Master Full Stack Netflix Clone development with Next.js 12, React, Tailwind, Prisma, and MongoDB."
                 img={project1}
-                link="/"
+                link="https://netflix-clone-pi-livid.vercel.app/"
                 type="Featured Project"
-                github="/"
+                github="https://github.com/joaoricardoM/netflix-clone"
               />
             </div>
             <div className="col-span-6 md:col-span-12">
               <Project
-                title="Netflix Clone"
-                summary="Master Full Stack Netflix Clone development with Next.js 12, React, Tailwind, Prisma, and MongoDB."
-                img={project1}
-                link="/"
+                title="La Trattoria"
+                summary="Restaurant page with menus built with React.js, TypeScript."
+                img={project2}
+                link="https://restaurant-six-smoky.vercel.app/"
                 type="Featured Project"
-                github="/"
+                github="https://github.com/joaoricardoM/restaurant"
               />
             </div>
             <div className="col-span-6 md:col-span-12">
