@@ -7,6 +7,7 @@ import Link from 'next/link'
 import React from 'react'
 import project1 from '../../public/images/projects/screenshot1.jpg'
 import project2 from '../../public/images/projects/home.png'
+import project3 from '../../public/images/projects/Print1.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -162,22 +163,22 @@ const projects = () => {
                 summary="Restaurant page with menus built with React.js, TypeScript."
                 img={project2}
                 link="https://restaurant-six-smoky.vercel.app/"
-                type="Featured Project"
+                type="Project"
                 github="https://github.com/joaoricardoM/restaurant"
               />
             </div>
             <div className="col-span-6 md:col-span-12">
               <Project
-                title="Netflix Clone"
-                summary="Master Full Stack Netflix Clone development with Next.js 12, React, Tailwind, Prisma, and MongoDB."
-                img={project1}
-                link="/"
-                type="Featured Project"
-                github="/"
+                title="Star Wars Memory Game"
+                summary="This memory game was developed using React, Vite, and TypeScript, with styled-components for styling. The main theme of this game is the thrilling Star Wars universe."
+                img={project3}
+                link="https://memory-game-inky-three.vercel.app/"
+                type="Project"
+                github="https://github.com/joaoricardoM/memory-game"
               />
             </div>
 
-            <div className="col-span-12">
+            {/* <div className="col-span-12">
               {' '}
               <FeaturedProject
                 title="Netflix Clone"
@@ -207,7 +208,7 @@ const projects = () => {
                 type="Featured Project"
                 github="/"
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>

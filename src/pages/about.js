@@ -60,23 +60,35 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I&apos;m João, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 2 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients&apos; visions to life.
+                Hi, I&apos;m João, a highly detail-oriented Front-End developer
+                with over 2 years of experience in web development projects. My
+                passion for creating exceptional digital experiences has driven
+                me to hone my skills in HTML, CSS, and JavaScript, and I stay
+                up-to-date with the latest technologies, including ReactJS,
+                NextJS, and TypeScript.
               </p>
               <p className="my-4 font-medium">
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.
+                Furthermore, my versatility extends to Back-End development,
+                where I am proficient in NodeJS and Java. This combination of
+                skills allows me not only to craft amazing user interfaces but
+                also to build robust systems that support these interfaces.
+              </p>
+              <p className="my-4 font-medium">
+                Specializing in crafting high-performance landing pages and
+                websites, I have a proven track record of delivering successful
+                projects, both independently and in collaborative endeavors. My
+                commitment to quality and attention to detail is what defines my
+                work.
               </p>
               <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other
-                digital product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                I am always on the lookout for challenges that allow me to
+                leverage my expertise and creativity to exceed expectations. If
+                you&apos;re in need of a developer who combines solid technical
+                knowledge with a keen eye for design and usability, I&apos;m
+                ready to collaborate on your next project.
+              </p>
+              <p className="font-extrabold mt-4">
+                Let&apos;s create something amazing together!
               </p>
             </div>
             <div
@@ -95,7 +107,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={50} />+
+                  <AnimatedNumbers value={25} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   satisfied clients
@@ -104,7 +116,7 @@ const about = () => {
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={40} />+
+                  <AnimatedNumbers value={20} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Projects Completed{' '}
