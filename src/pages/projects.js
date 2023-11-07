@@ -5,9 +5,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project1 from '../../public/images/projects/screenshot1.jpg'
-import project2 from '../../public/images/projects/home.png'
-import project3 from '../../public/images/projects/Print1.png'
+import project1 from '../../public/images/projects/netflix.jpg'
+import project2 from '../../public/images/projects/laTrattoria.png'
+import project3 from '../../public/images/projects/Game.png'
+import project4 from '../../public/images/projects/spotify.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -178,18 +179,18 @@ const projects = () => {
               />
             </div>
 
-            {/* <div className="col-span-12">
+            <div className="col-span-12">
               {' '}
               <FeaturedProject
-                title="Netflix Clone"
-                summary="Master Full Stack Netflix Clone development with Next.js 12, React, Tailwind, Prisma, and MongoDB."
-                img={project1}
-                link="/"
+                title="Spotify Clone"
+                summary="Full Stack Spotify Clone: Next 13.4, React, Stripe, Supabase, PostgreSQL, Tailwind"
+                img={project4}
+                link="https://spotify-clone-beta-liard.vercel.app/"
                 type="Featured Project"
-                github="/"
+                github="https://github.com/joaoricardoM/spotify-clone"
               />
             </div>
-            <div className="col-span-6 md:col-span-12">
+            {/* <div className="col-span-6 md:col-span-12">
               <Project
                 title="Netflix Clone"
                 summary="Master Full Stack Netflix Clone development with Next.js 12, React, Tailwind, Prisma, and MongoDB."
