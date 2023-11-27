@@ -1,16 +1,17 @@
-import Animated from '@/components/Animated'
-import { GithubIcon } from '@/components/Icons'
-import Layout from '@/components/Layout'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import project1 from '../../public/images/projects/netflix.jpg'
-import project2 from '../../public/images/projects/laTrattoria.png'
-import project3 from '../../public/images/projects/Game.png'
-import project4 from '../../public/images/projects/spotify.png'
-import { motion } from 'framer-motion'
-import TransitionEffect from '@/components/TransitionEffect'
+import Animated from "@/components/Animated"
+import { GithubIcon } from "@/components/Icons"
+import Layout from "@/components/Layout"
+import Head from "next/head"
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
+import project1 from "../../public/images/projects/netflix.jpg"
+import project2 from "../../public/images/projects/laTrattoria.png"
+import project3 from "../../public/images/projects/Game.png"
+import project4 from "../../public/images/projects/spotify.png"
+import project5 from "../../public/images/projects/notion-clone-image.png"
+import { motion } from "framer-motion"
+import TransitionEffect from "@/components/TransitionEffect"
 
 const FramerImage = motion(Image)
 
@@ -100,8 +101,8 @@ const Project = ({ title, type, img, link, github }) => {
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base">
-          {' '}
-          {type}{' '}
+          {" "}
+          {type}{" "}
         </span>
         <Link
           href={link}
@@ -150,12 +151,12 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Netflix Clone"
-                summary="Master Full Stack Netflix Clone development with Next.js 12, React, Tailwind, Prisma, and MongoDB."
-                img={project1}
-                link="https://netflix-clone-pi-livid.vercel.app/"
+                title="Notion Clone"
+                summary="Fullstack Notion Clone: Next.js 13, React, Convex, Tailwind"
+                img={project5}
+                link="https://notepad-app-umber.vercel.app/"
                 type="Featured Project"
-                github="https://github.com/joaoricardoM/netflix-clone"
+                github="https://github.com/joaoricardoM/notion-clone"
               />
             </div>
             <div className="col-span-6 md:col-span-12">
@@ -180,7 +181,6 @@ const projects = () => {
             </div>
 
             <div className="col-span-12">
-              {' '}
               <FeaturedProject
                 title="Spotify Clone"
                 summary="Full Stack Spotify Clone: Next 13.4, React, Stripe, Supabase, PostgreSQL, Tailwind"
@@ -190,17 +190,17 @@ const projects = () => {
                 github="https://github.com/joaoricardoM/spotify-clone"
               />
             </div>
-            {/* <div className="col-span-6 md:col-span-12">
+            <div className="col-span-6 md:col-span-12">
               <Project
                 title="Netflix Clone"
                 summary="Master Full Stack Netflix Clone development with Next.js 12, React, Tailwind, Prisma, and MongoDB."
                 img={project1}
-                link="/"
-                type="Featured Project"
-                github="/"
+                link="https://netflix-clone-pi-livid.vercel.app/"
+                type="Project"
+                github="https://github.com/joaoricardoM/netflix-clone"
               />
             </div>
-            <div className="col-span-6 md:col-span-12">
+            {/* <div className="col-span-6 md:col-span-12">
               <Project
                 title="Netflix Clone"
                 summary="Master Full Stack Netflix Clone development with Next.js 12, React, Tailwind, Prisma, and MongoDB."
