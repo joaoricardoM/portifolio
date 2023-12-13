@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import React, { useState } from 'react'
-import Logo from './Logo'
-import { useRouter } from 'next/router'
+import Link from "next/link"
+import React, { useState } from "react"
+import Logo from "./Logo"
+import { useRouter } from "next/router"
 import {
   TwitterIcon,
   DribbbleIcon,
@@ -10,11 +10,11 @@ import {
   PinterestIcon,
   SunIcon,
   MoonIcon
-} from './Icons'
-import { motion } from 'framer-motion'
-import useThems from './hooks/useThems'
+} from "./Icons"
+import { motion } from "framer-motion"
+import useThems from "./hooks/useThems"
 
-const CustomLink = ({ title, href, className = '' }) => {
+const CustomLink = ({ title, href, className = "" }) => {
   const router = useRouter()
   return (
     <Link href={href} className={`${className} relative group`}>
@@ -23,7 +23,7 @@ const CustomLink = ({ title, href, className = '' }) => {
       <span
         className={`
       h-[1px] inline-block bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
-      ${router.asPath === href ? 'w-full' : 'w-0'} dark:bg-light
+      ${router.asPath === href ? "w-full" : "w-0"} dark:bg-light
       `}
       >
         &nbsp;
@@ -32,7 +32,7 @@ const CustomLink = ({ title, href, className = '' }) => {
   )
 }
 
-const CustomMobileLink = ({ title, href, className = '', toggle }) => {
+const CustomMobileLink = ({ title, href, className = "", toggle }) => {
   const router = useRouter()
 
   const handleClickButton = () => {
@@ -51,7 +51,7 @@ const CustomMobileLink = ({ title, href, className = '', toggle }) => {
       <span
         className={`
       h-[1px] inline-block bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
-      ${router.asPath === href ? 'w-full' : 'w-0'} dark:bg-dark 
+        ${router.asPath === href ? "w-full" : "w-0"} dark:bg-dark
       `}
       >
         &nbsp;
@@ -77,15 +77,15 @@ const NavBar = () => {
         >
           <span
             className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm  
-            ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}
+            ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"}`}
           ></span>
           <span
             className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm my-0.5 
-            ${isOpen ? 'opacity-0' : 'opacity-100'}`}
+            ${isOpen ? "opacity-0" : "opacity-100"}`}
           ></span>
           <span
             className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm 
-            ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}
+            ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"}`}
           ></span>
         </button>
 
@@ -99,7 +99,7 @@ const NavBar = () => {
           <nav className="flex z-0 items-center justify-center flex-wrap">
             <motion.a
               href="http://twitter.com/joaoricardo_x"
-              target={'_blank'}
+              target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6 mr-3"
@@ -108,7 +108,7 @@ const NavBar = () => {
             </motion.a>
             <motion.a
               href="https://github.com/joaoricardoM"
-              target={'_blank'}
+              target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6 mx-3"
@@ -117,7 +117,7 @@ const NavBar = () => {
             </motion.a>
             <motion.a
               href="https://www.linkedin.com/in/joaormiranda/"
-              target={'_blank'}
+              target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6 mx-3"
@@ -144,15 +144,15 @@ const NavBar = () => {
             </motion.a> */}
 
             <button
-              onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+              onClick={() => setMode(mode === "light" ? "dark" : "light")}
               className={`ml-3 flex items-center justify-center rounded-full p-1 ${
-                mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'
-              }`}
+                mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+              }  sm:ml-0 sm:mt-3`}
             >
-              {mode === 'dark' ? (
-                <SunIcon className={'fill-dark'} />
+              {mode === "dark" ? (
+                <SunIcon className={"fill-dark"} />
               ) : (
-                <MoonIcon className={'fill-dark'} />
+                <MoonIcon className={"fill-dark"} />
               )}
             </button>
           </nav>
@@ -160,7 +160,7 @@ const NavBar = () => {
 
         {isOpen ? (
           <motion.div
-            initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
+            initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
             animate={{ scale: 1, opacity: 1 }}
             className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
       bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
@@ -194,7 +194,7 @@ const NavBar = () => {
             <nav className="flex z-0 items-center justify-center flex-wrap mt-2">
               <motion.a
                 href="http://twitter.com"
-                target={'_blank'}
+                target={"_blank"}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
                 className="w-6 mx-3 bg-light dark:bg-dark rounded-full sm:mx-1"
@@ -203,7 +203,7 @@ const NavBar = () => {
               </motion.a>
               <motion.a
                 href="http://twitter.com"
-                target={'_blank'}
+                target={"_blank"}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
                 className="w-6 mx-3 sm:mx-1"
@@ -212,7 +212,7 @@ const NavBar = () => {
               </motion.a>
               <motion.a
                 href="http://twitter.com"
-                target={'_blank'}
+                target={"_blank"}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
                 className="w-6 mr-3 sm:mx-1"
@@ -239,15 +239,15 @@ const NavBar = () => {
               </motion.a> */}
 
               <button
-                onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+                onClick={() => setMode(mode === "light" ? "dark" : "light")}
                 className={`ml-3 flex items-center justify-center rounded-full p-1 ${
-                  mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'
+                  mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
                 }`}
               >
-                {mode === 'dark' ? (
-                  <SunIcon className={'fill-dark'} />
+                {mode === "dark" ? (
+                  <SunIcon className={"fill-dark"} />
                 ) : (
-                  <MoonIcon className={'fill-dark'} />
+                  <MoonIcon className={"fill-dark"} />
                 )}
               </button>
             </nav>
