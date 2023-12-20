@@ -70,7 +70,7 @@ const NavBar = () => {
 
   return (
     <>
-      <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-30 lg:px-16 md:px-12 sm:px-8">
+      <header className="w-full flex items-center justify-between px-32 py-8 font-medium z-10 dark:text-light lg:px-16 relative z-1 md:px-12 sm:px-8 ">
         <button
           className="flex-col justify-center items-center hidden lg:flex"
           onClick={handleClick}
@@ -193,7 +193,7 @@ const NavBar = () => {
             </nav>
             <nav className="flex z-0 items-center justify-center flex-wrap mt-2">
               <motion.a
-                href="http://twitter.com"
+                href="https://github.com/joaoricardoM"
                 target={"_blank"}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
@@ -202,7 +202,7 @@ const NavBar = () => {
                 <GithubIcon />
               </motion.a>
               <motion.a
-                href="http://twitter.com"
+                href="https://www.linkedin.com/in/joaormiranda/"
                 target={"_blank"}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
@@ -211,7 +211,7 @@ const NavBar = () => {
                 <LinkedInIcon />
               </motion.a>
               <motion.a
-                href="http://twitter.com"
+                href="http://twitter.com/joaoricardo_x"
                 target={"_blank"}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
