@@ -91,7 +91,7 @@ const about = () => {
                 Let&apos;s create something amazing together!
               </p>
             </div>
-            <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark  bg-light p-8 dark:border-light dark:bg-dark xl:col-span-4 md:col-span-8 md:order-1 ">
+            <div className="relative col-span-2 h-max rounded-2xl border-2 border-solid border-dark  bg-light p-8 dark:border-light dark:bg-dark xl:col-span-4 md:col-span-8 md:order-1 ">
               <div className="absolute top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl  bg-dark dark:bg-light" />
               <Image
                 src={profilePic}
