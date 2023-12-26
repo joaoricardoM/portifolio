@@ -134,7 +134,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>João | Projects Page</title>
+        <title>Projects</title>
         <meta name="description" content="any description" />
         <link rel="icon" href="/logo.svg" sizes="any" />
       </Head>
@@ -159,6 +159,17 @@ const projects = () => {
                 github="https://github.com/joaoricardoM/notion-clone"
               />
             </div>
+
+            <div className="col-span-6 md:col-span-12">
+              <Project
+                title="Netflix Clone"
+                summary="Master Full Stack Netflix Clone development with Next.js 12, React, Tailwind, Prisma, and MongoDB."
+                img={project1}
+                link="https://netflix-clone-one-gamma.vercel.app/"
+                type="Project"
+                github="https://github.com/joaoricardoM/netflix-clone"
+              />
+            </div>
             <div className="col-span-6 md:col-span-12">
               <Project
                 title="La Trattoria"
@@ -169,7 +180,19 @@ const projects = () => {
                 github="https://github.com/joaoricardoM/restaurant"
               />
             </div>
-            <div className="col-span-6 md:col-span-12">
+
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Spotify Clone"
+                summary="Full Stack Spotify Clone: Next 13.4, React, Stripe, Supabase, PostgreSQL, Tailwind"
+                img={project4}
+                link="https://spotify-clone-dupe.vercel.app/"
+                type="Featured Project"
+                github="https://github.com/joaoricardoM/spotify-clone"
+              />
+            </div>
+
+            {/* <div className="col-span-6 md:col-span-12">
               <Project
                 title="Star Wars Memory Game"
                 summary="This memory game was developed using React, Vite, and TypeScript, with styled-components for styling. The main theme of this game is the thrilling Star Wars universe."
@@ -178,28 +201,7 @@ const projects = () => {
                 type="Project"
                 github="https://github.com/joaoricardoM/memory-game"
               />
-            </div>
-
-            <div className="col-span-12">
-              <FeaturedProject
-                title="Spotify Clone"
-                summary="Full Stack Spotify Clone: Next 13.4, React, Stripe, Supabase, PostgreSQL, Tailwind"
-                img={project4}
-                link="https://spotify-clone-beta-liard.vercel.app/"
-                type="Featured Project"
-                github="https://github.com/joaoricardoM/spotify-clone"
-              />
-            </div>
-            <div className="col-span-6 md:col-span-12">
-              <Project
-                title="Netflix Clone"
-                summary="Master Full Stack Netflix Clone development with Next.js 12, React, Tailwind, Prisma, and MongoDB."
-                img={project1}
-                link="https://netflix-clone-pi-livid.vercel.app/"
-                type="Project"
-                github="https://github.com/joaoricardoM/netflix-clone"
-              />
-            </div>
+            </div> */}
             {/* <div className="col-span-6 md:col-span-12">
               <Project
                 title="Netflix Clone"

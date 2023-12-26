@@ -40,7 +40,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>João | About Page</title>
+        <title>About</title>
         <meta name="description" content="any description" />
         <link rel="icon" href="/logo.svg" sizes="any" />
       </Head>
