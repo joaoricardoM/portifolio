@@ -17,12 +17,7 @@ export default function Home() {
         <title>João Ricardo | Web Developer</title>/
         <meta
           name="description"
-          content=" Hi, I'm João, a highly detail-oriented Front-End developer
-                with over 2 years of experience in web development projects. My
-                passion for creating exceptional digital experiences has driven
-                me to hone my skills in HTML, CSS, and JavaScript, and I stay
-                up-to-date with the latest technologies, including ReactJS,
-                NextJS, and TypeScript."
+          content=" Hi, I'm João, a highly detail-oriented Front-End developer"
         />
         <link rel="icon" href="/logo.svg" sizes="any" />
       </Head>
@@ -44,7 +39,7 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <Animated
-                text="Turning Vision Into Reality With Code And Design."
+                text="Elevating user experiences through innovative design."
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
