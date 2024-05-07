@@ -13,6 +13,7 @@ import {
 } from "./Icons"
 import { motion } from "framer-motion"
 import useThems from "./hooks/useThems"
+// import LanguageSwitch from "./LanguageSwitch"
 
 const CustomLink = ({ title, href, className = "" }) => {
   const router = useRouter()
@@ -97,7 +98,7 @@ const NavBar = () => {
             <CustomLink href="/articles" title="Articles" className="ml-4" />
           </nav>
           <nav className="flex z-0 items-center justify-center flex-wrap">
-            <motion.a
+            {/* <motion.a
               href="http://twitter.com/joaoricardo_x"
               target={"_blank"}
               whileHover={{ y: -2 }}
@@ -105,7 +106,7 @@ const NavBar = () => {
               className="w-6 mr-3"
             >
               <TwitterIcon />
-            </motion.a>
+            </motion.a> */}
             <motion.a
               href="https://github.com/joaoricardoM"
               target={"_blank"}
@@ -155,6 +156,17 @@ const NavBar = () => {
                 <MoonIcon className={"fill-dark"} />
               )}
             </button>
+            {/* <button
+              className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+                mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+              }  sm:ml-0 sm:mt-3`}
+            >
+              {mode === "dark" ? (
+                <LanguageSwitch className={"fill-dark"} />
+              ) : (
+                <LanguageSwitch className={"fill-light"} />
+              )}
+            </button> */}
           </nav>
         </div>
 
@@ -250,6 +262,17 @@ const NavBar = () => {
                   <MoonIcon className={"fill-dark"} />
                 )}
               </button>
+              {/* <button
+                className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+                  mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+                }`}
+              >
+                {mode === "dark" ? (
+                  <LanguageSwitch className={"fill-dark"} />
+                ) : (
+                  <LanguageSwitch className={"fill-light"} />
+                )}
+              </button> */}
             </nav>
           </motion.div>
         ) : null}

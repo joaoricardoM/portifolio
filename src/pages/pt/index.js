@@ -1,12 +1,12 @@
 import Head from "next/head"
 import Layout from "@/components/Layout"
 import Image from "next/image"
-import profilePic from "../../public/images/profile/developer-pic-3.jpeg"
+import profilePic from "../../../public/images/profile/developer-pic-3.jpeg"
 import Animated from "@/components/Animated"
 import Link from "next/link"
 import { LinkArrow } from "@/components/Icons"
 import HireMe from "@/components/HireMe"
-import lightBulb from "../../public/images/sgvs/miscellaneous_icons_1.svg"
+import lightBulb from "../../../public/images/sgvs/miscellaneous_icons_1.svg"
 import Particle from "@/components/particles"
 import TransitionEffect from "@/components/TransitionEffect"
 
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>João Ricardo | Web Developer</title>/
+        <title>João Ricardo | Desenvolvedor Web</title>
         <meta
           name="description"
           content=" Hi, I'm João, a highly detail-oriented Front-End developer"
@@ -39,13 +39,14 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <Animated
-                text="Elevating user experiences through innovative design."
+                text="Aprimorando a experiência do usuário com um design revolucionário."
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                I&apos;m a software developer based in Campinas BR, specializing
-                in building exceptional websites and digital experiences, and
-                everything in between.
+                Sou um desenvolvedor de software localizado em Campinas, Brasil,
+                especializado na criação de sites e experiências digitais de
+                alta qualidade, abrangendo uma ampla gama de projetos no campo
+                digital.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
@@ -83,7 +84,7 @@ export default function Home() {
                   target={"_blank"}
                   className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
                 >
-                  Contact{" "}
+                  Contato
                 </Link>
               </div>
             </div>
