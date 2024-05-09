@@ -61,7 +61,7 @@ const about = () => {
               </h2>
               <p className="font-medium">
                 Hi, I&apos;m João, a highly detail-oriented Front-End developer
-                with over 2 years of experience in web development projects. My
+                with over 4 years of experience in web development projects. My
                 passion for creating exceptional digital experiences has driven
                 me to hone my skills in HTML, CSS, and JavaScript, and I stay
                 up-to-date with the latest technologies, including ReactJS,
@@ -122,7 +122,7 @@ const about = () => {
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={2} />+
+                  <AnimatedNumbers value={4} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   years of experience
