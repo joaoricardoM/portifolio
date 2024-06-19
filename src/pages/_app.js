@@ -7,7 +7,7 @@ import { AnimatePresence } from "framer-motion"
 import { useRouter } from "next/router"
 import Script from "next/script"
 
-import * as gtag from "./lib/gtag"
+import * as gtag from "../lib/gtag"
 import { useEffect } from "react"
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" })
