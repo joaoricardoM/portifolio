@@ -38,7 +38,7 @@ const articles = () => {
               href="/articles/next"
               className="flex items-center justify-center h-full"
             >
-              Explorando o Poder do Next.js: Um Guia Completo
+              Exploring the Power of Next.js: A Complete Guide
             </Link>
           </motion.div>
           <motion.div
@@ -55,7 +55,7 @@ const articles = () => {
               href="/articles/nest"
               className="flex items-center justify-center h-full"
             >
-              Introdução ao NestJS: Um Guia para Iniciantes
+              NestJS Complete Guide: A Kickstart for Developers
             </Link>
           </motion.div>
           <motion.div
@@ -72,7 +72,7 @@ const articles = () => {
               href="/articles/microsservices-docker-node"
               className="flex items-center justify-center h-full"
             >
-              Microservices com Node.js e Docker: Um Guia Completo
+              Microservices with Node.js and Docker: A Complete Guide
             </Link>
           </motion.div>
           <motion.div
@@ -89,7 +89,7 @@ const articles = () => {
               href="/articles/comingSoon"
               className="flex items-center justify-center h-full"
             >
-              React Avançado: Padrões e Boas Práticas
+              Advanced React: Patterns and Best Practices
             </Link>
           </motion.div>
         </main>

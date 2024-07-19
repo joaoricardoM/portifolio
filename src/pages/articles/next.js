@@ -7,26 +7,25 @@ export default function Next() {
     <Layout>
       <div className="min-h-screen py-10 dark:text-light ">
         <Head>
-          <title>Exporando o poder do Next.js - João Ricardo</title>
+          <title>Exposing the power of Next.js - João Ricardo</title>
           <meta name="description" content="any description" />
           <link rel="icon" href="/logo.svg" sizes="any" />
         </Head>
         <main className="max-w-4xl mx-auto p-8 shadow-md rounded">
           <h1 className="text-4xl font-bold mb-4 text-center text-indigo-600">
-            Explorando o Poder do Next.js: Um Guia Completo
+            Exploring the Power of Next.js: A Complete Guide
           </h1>
           <p className="text-gray-700 mb-8 text-center">
-            Por <strong>João Ricardo Miranda</strong>
+            Per <strong>João Ricardo Miranda</strong>
           </p>
           <article className="prose prose-lg mx-auto">
             <p>
-              Nos últimos anos, o desenvolvimento de aplicações web evoluiu
-              significativamente, e com ele surgiram diversas ferramentas e
-              frameworks para facilitar a vida dos desenvolvedores. Entre essas
-              ferramentas, o Next.js se destaca como uma poderosa opção para a
-              criação de aplicações React. Neste artigo, vamos explorar o que é
-              o Next.js, suas principais funcionalidades e como ele pode
-              beneficiar seus projetos.
+              In recent years, the development of web applications has evolved
+              significantly, and with it several tools and tools have emerged.
+              frameworks to make life easier for developers. Among these tools,
+              Next.js stands out as a powerful option for creating React
+              applications. In this article, we will explore what Next.js is,
+              its main features and how it can benefit your projects.
             </p>
             <br />
 
@@ -36,131 +35,124 @@ export default function Next() {
 
             <br />
             <p>
-              Next.js é um framework de código aberto baseado em React, criado
-              pela Vercel. Ele facilita a construção de aplicações web modernas,
-              oferecendo recursos como renderização do lado do servidor (SSR),
-              geração estática de páginas (SSG) e um sistema de roteamento
-              simplificado. O Next.js permite que os desenvolvedores criem
-              aplicações React escaláveis e otimizadas para SEO de maneira mais
-              eficiente.
+              Next.js is an open source framework based on React, created by
+              Vercel. It makes it easy to build modern web applications by
+              offering features like server-side rendering (SSR), static page
+              generation (SSG), and a simplified routing system. Next.js enables
+              developers to build scalable, SEO-optimized React applications
+              more efficiently.
             </p>
 
             <br />
             <h2 className="text-2xl font-bold mb-4 text-center text-indigo-600">
-              Principais Funcionalidades do Next.js
+              Main Features of Next.js
             </h2>
-            <h3 className="font-bold mb-4">
-              Renderização do Lado do Servidor (SSR)
-            </h3>
+            <h3 className="font-bold mb-4">Server-Side Rendering (SSR)</h3>
 
             <br />
             <p>
-              Uma das características mais poderosas do Next.js é a renderização
-              do lado do servidor. Com o SSR, as páginas são renderizadas no
-              servidor a cada requisição, resultando em tempos de carregamento
-              mais rápidos e melhorando significativamente o SEO da aplicação.
-              Isso ocorre porque os motores de busca conseguem indexar o
-              conteúdo renderizado, ao invés de apenas o JavaScript da
-              aplicação.
+              One of the most powerful features of Next.js is server-side
+              rendering. With SSR, pages are rendered on the server with each
+              request, resulting in faster loading times and significantly
+              improving the application&apos;s SEO. This is because search
+              engines can index the rendered content, rather than just the
+              application&apos;s JavaScript.
             </p>
 
             <br />
-            <h3 className="font-bold mb-4">
-              Geração Estática de Páginas (SSG)
-            </h3>
+            <h3 className="font-bold mb-4">Static Page Generation (SSG)</h3>
             <br />
 
             <p>
-              O Next.js também suporta a geração estática de páginas. Com o SSG,
-              as páginas são geradas no momento da build e servidas como
-              arquivos HTML estáticos. Isso proporciona uma performance
-              excepcional e é ideal para sites de conteúdo estático que não
-              necessitam de atualizações frequentes.
+              Next.js also supports static page generation. With SSG, pages are
+              generated at build time and served as static HTML files. This
+              provides exceptional performance and is ideal for static content
+              sites that do not require frequent updates.
             </p>
 
             <br />
-            <h3 className="font-bold mb-4">Roteamento Simplificado</h3>
+            <h3 className="font-bold mb-4">Simplified Routing</h3>
 
             <br />
             <p>
-              O sistema de roteamento do Next.js é baseado na estrutura de
-              diretórios, o que torna a configuração de rotas muito intuitiva.
-              Basta criar arquivos na pasta <code>pages</code>, e o Next.js
-              automaticamente criará as rotas correspondentes. Isso elimina a
-              necessidade de configurar manualmente o roteamento, como é feito
-              em projetos React tradicionais.
+              Next.js&apos;s routing system is based on the directory structure,
+              which makes configuring routes very intuitive. Just create files
+              in the folder <code>pages</code>, and Next.js automatically will
+              create the corresponding routes. This eliminates the need for
+              manually configure routing, as is done in projects Traditional
+              React.
             </p>
 
             <br />
-            <h3 className="font-bold mb-4">Suporte a API Routes</h3>
+            <h3 className="font-bold mb-4">Routes API support</h3>
 
             <br />
             <p>
-              O Next.js permite a criação de rotas de API diretamente dentro do
-              projeto. Isso significa que você pode construir APIs completas sem
-              a necessidade de configurar um servidor separado. As rotas de API
-              são definidas na pasta <code>pages/api</code> e são tratadas como
-              funções serverless, simplificando a construção de backends leves e
-              escaláveis.
+              Next.js allows you to create API routes directly within the
+              project. This means you can build complete APIs without the need
+              to configure a separate server. The API routes are defined in the
+              folder <code>pages/api</code> and are treated as serverless
+              functions, simplifying the construction of lightweight backends
+              and scalable.
             </p>
             <br />
 
-            <h3 className="font-bold mb-4">Recursos de Estilo e CSS-in-JS</h3>
+            <h3 className="font-bold mb-4">Style and CSS-in-JS Features</h3>
 
             <br />
             <p>
-              Estilizar componentes em Next.js é simples e flexível. Você pode
-              usar CSS tradicional, SASS, ou aproveitar bibliotecas de
-              CSS-in-JS, como styled-components. Além disso, o Next.js suporta
-              CSS Modules nativamente, permitindo a criação de estilos locais
-              para cada componente.
+              Styling components in Next.js is simple and flexible. You can use
+              traditional CSS, SASS, or leverage CSS-in-JS, like
+              styled-components. Additionally, Next.js supports CSS Modules
+              natively, allowing the creation of local styles for each
+              component.
             </p>
             <br />
 
-            <h3 className="font-bold mb-4">Otimização Automática</h3>
+            <h3 className="font-bold mb-4">Automatic Optimization</h3>
 
             <br />
             <p>
-              O Next.js vem com várias otimizações automáticas para melhorar a
-              performance da aplicação, incluindo a divisão automática de
-              código, carregamento de imagens otimizado e pré-busca de links.
-              Essas otimizações garantem que a aplicação seja rápida e
-              eficiente, mesmo com crescimento de complexidade e tamanho.
+              Next.js comes with several automatic optimizations to improve
+              application performance, including automatic division of code,
+              optimized image loading and link prefetching. These optimizations
+              ensure that the application is fast and efficient, even with
+              increasing complexity and size.
             </p>
 
             <br />
 
             <h2 className="text-2xl font-bold mb-4 text-center text-indigo-600">
-              Benefícios de Usar Next.js
+              Benefits of Using Next.js
             </h2>
 
             <br />
 
             <ul>
               <li>
-                <strong>SEO Melhorado:</strong> Graças ao SSR e SSG, suas
-                páginas são otimizadas para motores de busca, aumentando a
-                visibilidade e o alcance orgânico.
+                <strong>Improved SEO:</strong> Thanks to SSR and SSG, your pages
+                are optimized for search engines, increasing the visibility and
+                organic reach.
               </li>
               <li>
-                <strong>Performance Superior:</strong> Com a geração estática e
-                otimizações automáticas, suas aplicações carregam mais rápido e
-                proporcionam uma experiência de usuário melhor.
+                <strong>Superior performance:</strong> With static generation
+                and automatic optimizations, your applications load faster and
+                provide a better user experience.
               </li>
               <li>
-                <strong>Desenvolvimento Simplificado:</strong> O sistema de
-                roteamento baseado em arquivos e o suporte a API Routes tornam o
-                desenvolvimento mais direto e menos propenso a erros.
+                <strong>Simplified Development:</strong> The system of
+                file-based routing and Routes API support make more direct and
+                less error-prone development..
               </li>
               <li>
-                <strong>Flexibilidade de Estilo:</strong> Com suporte a várias
-                opções de estilização, você pode escolher a que melhor se adapta
-                ao seu projeto e equipe.
+                <strong>Style Flexibility:</strong> With support for multiple
+                styling options, you can choose the one that suits you best to
+                your project and team.
               </li>
               <li>
-                <strong>Escalabilidade:</strong> Com a renderização do lado do
-                servidor e suporte a funções serverless, você pode escalar sua
-                aplicação facilmente conforme necessário.
+                <strong>Scalability:</strong> With side-side rendering server
+                and serverless function support, you can scale your Easily apply
+                as needed.
               </li>
             </ul>
 
@@ -169,7 +161,7 @@ export default function Next() {
 
           <div className="bg-indigo-50 p-6 rounded-lg shadow-md mt-8">
             <h2 className="text-2xl font-bold mb-4 text-indigo-600">
-              Exemplo de Código para Criar uma Aplicação Simples com Next.js
+              Code Example to Create a Simple Application with Next.js
             </h2>
 
             <p className="text-base font-bold mb-4 text-indigo-600">
@@ -180,14 +172,14 @@ export default function Next() {
             <pre className="bg-gray-800 text-white p-4 rounded-lg overflow-x-auto">
               <code>
                 {`
-                  // Instalação Next.js e Configuração do Tailwind CSS
+                  // Next.js Installation and Tailwind CSS Configuration
                
-                     Abra e Execute no terminal: 
+                     Open and Run in terminal: 
                       - npx create-next-app@latest my-nextjs-app
                       - cd my-nextjs-app
                       - npm install -D tailwindcss@latest  postcss@latest  autoprefixer@latest
                       - npx tailwindcss init -p
-                      - Adicione o código abaixo aos arquivos correspondentes.
+                      - Add the code below to the corresponding files.
                 `}
               </code>
             </pre>
@@ -206,8 +198,8 @@ export default function Next() {
                             <title>Minha Primeira Aplicação Next.js</title>
                           </Head>
                           <main>
-                            <h1 className="title">Bem-vindo ao Next.js!</h1>
-                            <p className="description">Comece editando <code>pages/index.js</code></p>
+                            <h1 className="title">Welcome to Next.js!</h1>
+                            <p className="description">Start editing <code>pages/index.js</code></p>
                           </main>
                         </div>
                       );
@@ -262,16 +254,16 @@ export default function Next() {
           <br />
 
           <h2 className="text-2xl font-bold mb-4 text-center text-indigo-600">
-            Conclusão
+            Conclusion
           </h2>
           <br />
           <p>
-            Next.js é um framework robusto que combina o poder do React com
-            funcionalidades avançadas de renderização e otimização. Se você está
-            buscando uma maneira de construir aplicações web modernas,
-            escaláveis e otimizadas para SEO, o Next.js é uma escolha excelente.
-            Comece hoje mesmo a explorar tudo o que este framework tem a
-            oferecer e leve seus projetos para o próximo nível.
+            Next.js is a robust framework that combines the power of React with
+            Advanced rendering and optimization features. If you are looking for
+            a way to build modern web applications, scalable and SEO optimized,
+            Next.js is an excellent choice. Start exploring everything this
+            framework has to offer today offer and take your projects to the
+            next level.
           </p>
         </main>
       </div>
