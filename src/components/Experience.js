@@ -75,13 +75,24 @@ const Experience = () => {
             position="Junior Software Developer"
             company="Centro Médico de Campinas"
             companyLink="https://www.fcmc.com.br/"
-            time="2021 - Present"
+            time="2021 - 2024"
             address="Campinas,SP"
             work="Developed an internal application to streamline information sharing among nursing departments, restricted solely to nurses, doctors, and senior team members. Utilized React, Node.js, Express, and MongoDB technologies for data storage.
             Contributed to enhancing the Clinical Department's aspect by implementing validations on the website to prevent outdated access to medical records.
             Improved the website's form by adding new features and developing a liability waiver to ensure the security of client information.
             Integrated WhatsApp into the hospital environment and provided information to clients."
           />
+
+          <Details
+            position="Mid-Level Front-End Developer"
+            company="Incentivar"
+            companyLink="https://www.incentivar.io"
+            time="2023 - Present"
+            address="Campinas, SP"
+            work="Working on internal projects at Incentivar.io, developing and maintaining modern web applications using technologies such as React, Next.js, Zustand, and Material-UI. I build dynamic and validated forms with React Hook Form and Zod, create responsive user interfaces, and implement interactive data tables with server-side pagination, filtering, and bulk actions. My work involves close integration with RESTful APIs, applying clean code practices, and delivering consistent and user-focused experiences."
+          />
+
+
         </ul>
       </div>
     </div>

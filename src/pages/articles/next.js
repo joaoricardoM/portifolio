@@ -30,7 +30,7 @@ export default function Next() {
             <br />
 
             <h2 className="text-2xl font-bold mb-4 text-center text-indigo-600">
-              O que é Next.js?
+              What is Next.js?
             </h2>
 
             <br />
